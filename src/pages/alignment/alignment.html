@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Alinhamento e balanceamento</ion-title>
+    <ion-buttons end>
+      <button ion-button tappable (click)="presentNotifications($event)">
+        <ion-icon name="notifications"></ion-icon>
+      </button>
+      <button ion-button tappable (click)="goToAccount()">
+        <ion-icon name="cog"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="animated fadeIn common-bg">
+  <ion-card>
+    <ion-card-header>
+      Alinhamento
+    </ion-card-header>
+    <ion-card-content>
+      realizado dias atraz
+    </ion-card-content>
+  </ion-card>
+
+  <ion-list>
+    <ion-item>
+      <ion-label>Novo agendamento</ion-label>
+      <ion-select [(ngModel)]="gaming">
+        <ion-option value="nes">Alinhamento</ion-option>
+        <ion-option value="n64">Balanceamento</ion-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+</ion-content>
